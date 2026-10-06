@@ -1,0 +1,57 @@
+[
+ {
+  "business_type": "Engineer-to-order manufacturer",
+  "description": "Makes to customer order: quote, engineering and drawing approval, buying, workshop, QC / FAT, customer ready. Finance stays in Sage. First built for the AcmeTech enquiry (via Rick Potgieter).",
+  "roles": ["Projects Manager", "Projects User", "Sales User"],
+  "modules": ["Projects", "Selling", "Buying", "Stock", "Nest Projects"],
+  "apps": [],
+  "greeting": "Your jobs, your quotes and your workshop, at a glance.",
+  "show_attention": 1,
+  "tiles": ["NEST-TILE-JOB_BOARD", "NEST-TILE-WHO'S_ON_WHAT", "NEST-TILE-QUOTES", "NEST-TILE-WS-CUSTOMERS"],
+  "data_sources": ["nest_projects"]
+ },
+ {
+  "business_type": "Sales team with CRM",
+  "description": "Leads, deals and follow-up activities, with quick sales orders from a phone in the field.",
+  "roles": ["Sales Manager", "Sales User"],
+  "modules": ["CRM", "FCRM", "Selling", "Stock", "Nest CRM Tasks", "Mobile CRM"],
+  "apps": ["Frappe CRM"],
+  "greeting": "Who to call next, and what is closing.",
+  "show_attention": 1,
+  "tiles": ["NEST-TILE-WS-CRM", "NEST-TILE-WS-SELLING", "NEST-TILE-WS-CUSTOMERS", "NEST-TILE-WS-MOBILE_SCREENS", "NEST-TILE-WS-ITEMS"],
+  "data_sources": []
+ },
+ {
+  "business_type": "Retail with point of sale",
+  "description": "Shop or showroom selling over the counter: the till, cashing up, stock on hand and moving stock between stores.",
+  "roles": ["Sales User", "Stock User", "Accounts User"],
+  "modules": ["Selling", "Stock", "Accounts"],
+  "apps": [],
+  "greeting": "Open the till, sell, cash up.",
+  "show_attention": 0,
+  "tiles": ["NEST-TILE-WS-OPEN_POS", "NEST-TILE-WS-POS_CLOSING", "NEST-TILE-WS-OUR_ITEMS", "NEST-TILE-WS-STOCK_TRANSFER", "NEST-TILE-WS-SALES_INVOICES", "NEST-TILE-WS-CUSTOMERS"],
+  "data_sources": []
+ },
+ {
+  "business_type": "Manufacturer (make to stock)",
+  "description": "Makes standard products to stock: bills of materials, production planning, works orders, buying materials and quality checks.",
+  "roles": ["Manufacturing Manager", "Manufacturing User", "Stock User", "Purchase User"],
+  "modules": ["Manufacturing", "Stock", "Buying", "Selling", "Quality Management"],
+  "apps": [],
+  "greeting": "What to make, what is short, and what is done.",
+  "show_attention": 1,
+  "tiles": ["NEST-TILE-WS-MANUFACTURING", "NEST-TILE-0001", "NEST-TILE-WS-BOMS", "NEST-TILE-WS-STOCK", "NEST-TILE-WS-BUYING", "NEST-TILE-0002"],
+  "data_sources": []
+ },
+ {
+  "business_type": "Wholesale and distribution",
+  "description": "Buys in bulk and sells on: sales orders, purchase orders, stock across warehouses, customers and suppliers.",
+  "roles": ["Sales User", "Purchase User", "Stock User"],
+  "modules": ["Selling", "Buying", "Stock"],
+  "apps": [],
+  "greeting": "Orders in, stock out, suppliers chased.",
+  "show_attention": 1,
+  "tiles": ["NEST-TILE-WS-SELLING", "NEST-TILE-WS-BUYING", "NEST-TILE-WS-STOCK", "NEST-TILE-WS-STOCK_BALANCE", "NEST-TILE-WS-CUSTOMERS", "NEST-TILE-WS-SUPPLIERS"],
+  "data_sources": []
+ }
+]

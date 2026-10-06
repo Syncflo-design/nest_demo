@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "creation": "2026-10-06 18:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_type",
+  "demo_users",
+  "status_section",
+  "status_html",
+  "applied_type",
+  "applied_on",
+  "applied_by",
+  "data_section",
+  "data_html",
+  "applied_state"
+ ],
+ "fields": [
+  {
+   "description": "Pick a business type, then press Apply.",
+   "fieldname": "business_type",
+   "fieldtype": "Link",
+   "label": "Show the Site As",
+   "options": "Business Type"
+  },
+  {
+   "description": "The login(s) you present with. Their roles are replaced on Apply, so never list a real or admin account.",
+   "fieldname": "demo_users",
+   "fieldtype": "Table MultiSelect",
+   "label": "Demo Logins",
+   "options": "Demo Settings User"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Now Showing"
+  },
+  {
+   "fieldname": "status_html",
+   "fieldtype": "HTML",
+   "label": "Status"
+  },
+  {
+   "fieldname": "applied_type",
+   "fieldtype": "Link",
+   "label": "Applied Type",
+   "options": "Business Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "applied_on",
+   "fieldtype": "Datetime",
+   "label": "Applied On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "applied_by",
+   "fieldtype": "Link",
+   "label": "Applied By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_section",
+   "fieldtype": "Section Break",
+   "label": "Demo Data"
+  },
+  {
+   "fieldname": "data_html",
+   "fieldtype": "HTML",
+   "label": "Demo Data"
+  },
+  {
+   "fieldname": "applied_state",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "Applied State",
+   "read_only": 1
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-06 18:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nest Demo",
+ "name": "Demo Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

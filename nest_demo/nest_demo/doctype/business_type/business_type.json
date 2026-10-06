@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "autoname": "field:business_type",
+ "creation": "2026-10-06 18:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_type",
+  "enabled",
+  "description",
+  "access_section",
+  "roles",
+  "modules",
+  "apps",
+  "home_section",
+  "greeting",
+  "show_attention",
+  "tiles",
+  "data_section",
+  "data_sources",
+  "is_standard"
+ ],
+ "fields": [
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Business Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "description": "The kind of prospect this demo is for, and the story it tells.",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Who It Suits"
+  },
+  {
+   "fieldname": "access_section",
+   "fieldtype": "Section Break",
+   "label": "What the Demo Login Gets"
+  },
+  {
+   "description": "Replaces the demo login's roles when this type is applied.",
+   "fieldname": "roles",
+   "fieldtype": "Table MultiSelect",
+   "label": "Roles",
+   "options": "Business Type Role",
+   "reqd": 1
+  },
+  {
+   "description": "Only these modules appear (plus the basics every login needs). Everything else is hidden.",
+   "fieldname": "modules",
+   "fieldtype": "Table MultiSelect",
+   "label": "Modules Shown",
+   "options": "Business Type Module"
+  },
+  {
+   "description": "App icons on the desk, such as Frappe CRM or Helpdesk. Apps not listed are hidden from the demo login.",
+   "fieldname": "apps",
+   "fieldtype": "Table MultiSelect",
+   "label": "Apps Shown",
+   "options": "Business Type App"
+  },
+  {
+   "fieldname": "home_section",
+   "fieldtype": "Section Break",
+   "label": "Home Page"
+  },
+  {
+   "fieldname": "greeting",
+   "fieldtype": "Data",
+   "label": "Greeting"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_attention",
+   "fieldtype": "Check",
+   "label": "Show the 'needs your attention' lists"
+  },
+  {
+   "description": "Use Add Tiles to pick from the Nest Home tile library, in the order they should appear.",
+   "fieldname": "tiles",
+   "fieldtype": "Table",
+   "label": "Home Tiles",
+   "options": "Business Type Tile"
+  },
+  {
+   "fieldname": "data_section",
+   "fieldtype": "Section Break",
+   "label": "Demo Data"
+  },
+  {
+   "description": "Sample data the switch offers to load for this type. Use Add Demo Data to pick.",
+   "fieldname": "data_sources",
+   "fieldtype": "Table",
+   "label": "Demo Data",
+   "options": "Business Type Data"
+  },
+  {
+   "fieldname": "is_standard",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Shipped With Nest Demo",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-06 18:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nest Demo",
+ "name": "Business Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "business_type",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "business_type",
+ "track_changes": 1
+}

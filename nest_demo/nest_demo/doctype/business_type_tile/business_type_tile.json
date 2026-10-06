@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "creation": "2026-10-06 18:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tile",
+  "label"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "tile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tile",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-06 18:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nest Demo",
+ "name": "Business Type Tile",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
