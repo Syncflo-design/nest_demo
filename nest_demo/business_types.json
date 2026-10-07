@@ -14,7 +14,8 @@
    "Selling",
    "Buying",
    "Stock",
-   "Nest Projects"
+   "Nest Projects",
+   "Nest Floor"
   ],
   "apps": [],
   "greeting": "Your jobs, your quotes and your workshop, at a glance.",
@@ -23,6 +24,7 @@
    "NEST-TILE-JOB_BOARD",
    "NEST-TILE-WHO'S_ON_WHAT",
    "NEST-TILE-QUOTES",
+   "NEST-TILE-SHOP_FLOOR",
    "NEST-TILE-WS-CUSTOMERS"
   ],
   "data_sources": [
