@@ -3,7 +3,7 @@ app_title       = "Nest Demo"
 app_publisher   = "NestERP / Syncflo"
 app_description = "Demo-site switch: pick a business type and the demo login sees only what suits that prospect."
 app_email       = "ops@syncflo.co.za"
-app_license     = "MIT"
+app_license     = "Proprietary"
 app_icon        = "octicon octicon-briefcase"
 
 # For the demo site only. Never install on a client site: applying a business
